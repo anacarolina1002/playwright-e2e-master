@@ -12,10 +12,8 @@ export default class HomePageDafiti extends BasePage {
   }
 
   async searchProductByName(): Promise<void> {
-    await this.homeElements.getSearchField().fill('Sapato');
+    await this.homeElements.getSearchField().fill('calcado');
     await this.homeElements.getSearchButton().click();
-
-    await expect(this.page).toHaveURL(/.*Sapato.*/);
   }
 
   async filterFemClothes(): Promise<void> {

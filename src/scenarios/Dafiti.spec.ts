@@ -17,7 +17,7 @@ test.describe('Home Dafiti', () => {
 
   test('Preencher barra de pesquisa', async () => {
     await homePage.searchProductByName();
-    await expect(homePage.page).toHaveURL(/.*Sapato.*/);
+    await expect(homePage.page).toHaveURL(/.*calcado.*/);
   });
 
   test('Ver roupas femininas', async () => {
